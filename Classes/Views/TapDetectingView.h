@@ -63,8 +63,6 @@
 
 @end
 
-
-
 @protocol TapDetectingViewDelegate <NSObject>
 
 @optional
