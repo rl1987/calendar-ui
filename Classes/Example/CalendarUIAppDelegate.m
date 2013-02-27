@@ -35,12 +35,13 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
 
     // Add the tab bar controller's view to the window and display.
-    [window addSubview:tabBarController.view];
+    window.rootViewController = self.tabBarController;
     [window makeKeyAndVisible];
 
     return YES;

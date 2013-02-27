@@ -47,7 +47,8 @@
 	return YES;
 }
 
-/* Implementation for the MAWeekViewDataSource protocol */
+#pragma mark -
+#pragma mark MAWeekViewDataSource
 
 #ifdef USE_EVENTKIT_DATA_SOURCE
 
@@ -127,7 +128,8 @@ static int counter = 7 * 5;
     return _eventKitDataSource;
 }
 
-/* Implementation for the MAWeekViewDelegate protocol */
+#pragma mark -
+#pragma mark MAWeekViewDelegate
 
 - (void)weekView:(MAWeekView *)weekView eventTapped:(MAEvent *)event {
 	NSDateComponents *components = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:event.start];

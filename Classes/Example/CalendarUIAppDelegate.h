@@ -27,7 +27,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalendarUIAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
+@interface CalendarUIAppDelegate : NSObject <UIApplicationDelegate,
+UITabBarControllerDelegate> {
     UIWindow *window;
     UITabBarController *tabBarController;
 }
