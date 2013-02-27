@@ -12,6 +12,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		4DC34AEC16DEAC1B00A7FED6 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC34AEB16DEAC1B00A7FED6 /* MainWindow-iPad.xib */; };
 		6017229415EE2F7A00C70B43 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6017229315EE2F7A00C70B43 /* EventKit.framework */; };
 		6017229815EE2FB500C70B43 /* MAEventKitDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017229715EE2FB500C70B43 /* MAEventKitDataSource.m */; };
 		633345601247A6EF0086F398 /* MADayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6333455F1247A6EF0086F398 /* MADayView.m */; };
@@ -37,6 +38,7 @@
 		28A0AB4B0D9B1048005BE974 /* CalendarUI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarUI_Prefix.pch; sourceTree = "<group>"; };
 		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DC34AEB16DEAC1B00A7FED6 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		6017229315EE2F7A00C70B43 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		6017229615EE2FB500C70B43 /* MAEventKitDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAEventKitDataSource.h; path = Extensions/MAEventKitDataSource.h; sourceTree = "<group>"; };
 		6017229715EE2FB500C70B43 /* MAEventKitDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAEventKitDataSource.m; path = Extensions/MAEventKitDataSource.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				4DC34AEA16DEAC1500A7FED6 /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -137,6 +140,14 @@
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DC34AEA16DEAC1500A7FED6 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4DC34AEB16DEAC1B00A7FED6 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 		6017229515EE2FAB00C70B43 /* Extensions */ = {
@@ -247,6 +258,7 @@
 				63C6A7EA12462C2E007DCAAF /* ma_rightArrow.png in Resources */,
 				63C6A7EB12462C2E007DCAAF /* ma_rightArrow@2x.png in Resources */,
 				63C6A7EC12462C2E007DCAAF /* ma_topBackground.png in Resources */,
+				4DC34AEC16DEAC1B00A7FED6 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				INFOPLIST_FILE = "CalendarUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = CalendarUI;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -302,6 +315,7 @@
 				INFOPLIST_FILE = "CalendarUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = CalendarUI;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -314,6 +328,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -327,6 +342,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
